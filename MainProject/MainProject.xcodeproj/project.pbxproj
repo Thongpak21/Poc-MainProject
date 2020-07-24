@@ -15,6 +15,8 @@
 		44FA775524CACD320018DB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FA775324CACD320018DB58 /* LaunchScreen.storyboard */; };
 		44FA776024CACD320018DB58 /* MainProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA775F24CACD320018DB58 /* MainProjectTests.swift */; };
 		44FA776B24CACD320018DB58 /* MainProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA776A24CACD320018DB58 /* MainProjectUITests.swift */; };
+		44FA77A624CACED00018DB58 /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FA77A224CACEC80018DB58 /* Hero.framework */; };
+		44FA77A724CACED10018DB58 /* Hero.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44FA77A224CACEC80018DB58 /* Hero.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,35 @@
 			remoteGlobalIDString = 44FA774424CACD280018DB58;
 			remoteInfo = MainProject;
 		};
+		44FA77A124CACEC80018DB58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44FA779C24CACEC80018DB58 /* Hero.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44FA778224CACE460018DB58;
+			remoteInfo = Hero;
+		};
+		44FA77A324CACEC80018DB58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44FA779C24CACEC80018DB58 /* Hero.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44FA778B24CACE460018DB58;
+			remoteInfo = HeroTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44FA77A824CACED10018DB58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44FA77A724CACED10018DB58 /* Hero.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		44FA774524CACD280018DB58 /* MainProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +79,7 @@
 		44FA776624CACD320018DB58 /* MainProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FA776A24CACD320018DB58 /* MainProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProjectUITests.swift; sourceTree = "<group>"; };
 		44FA776C24CACD320018DB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FA779C24CACEC80018DB58 /* Hero.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Hero.xcodeproj; path = "../Poc-Module/Hero/Hero.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FA77A624CACED00018DB58 /* Hero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +111,12 @@
 		44FA773C24CACD280018DB58 = {
 			isa = PBXGroup;
 			children = (
+				44FA779C24CACEC80018DB58 /* Hero.xcodeproj */,
 				44FA774724CACD280018DB58 /* MainProject */,
 				44FA775E24CACD320018DB58 /* MainProjectTests */,
 				44FA776924CACD320018DB58 /* MainProjectUITests */,
 				44FA774624CACD280018DB58 /* Products */,
+				44FA77A524CACED00018DB58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +162,22 @@
 			path = MainProjectUITests;
 			sourceTree = "<group>";
 		};
+		44FA779D24CACEC80018DB58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44FA77A224CACEC80018DB58 /* Hero.framework */,
+				44FA77A424CACEC80018DB58 /* HeroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44FA77A524CACED00018DB58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +188,7 @@
 				44FA774124CACD280018DB58 /* Sources */,
 				44FA774224CACD280018DB58 /* Frameworks */,
 				44FA774324CACD280018DB58 /* Resources */,
+				44FA77A824CACED10018DB58 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +269,12 @@
 			mainGroup = 44FA773C24CACD280018DB58;
 			productRefGroup = 44FA774624CACD280018DB58 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 44FA779D24CACEC80018DB58 /* Products */;
+					ProjectRef = 44FA779C24CACEC80018DB58 /* Hero.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				44FA774424CACD280018DB58 /* MainProject */,
@@ -226,6 +283,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		44FA77A224CACEC80018DB58 /* Hero.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Hero.framework;
+			remoteRef = 44FA77A124CACEC80018DB58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44FA77A424CACEC80018DB58 /* HeroTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HeroTests.xctest;
+			remoteRef = 44FA77A324CACEC80018DB58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		44FA774324CACD280018DB58 /* Resources */ = {
