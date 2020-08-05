@@ -3,13 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		364865681BD4B7443B77F3B3 /* Pods_MainProject_MainProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B299F99428ECCA4162AAE254 /* Pods_MainProject_MainProjectUITests.framework */; };
-		4469B0DA24D869D60063507C /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4469B0D724D869CD0063507C /* Hero.framework */; };
-		4469B0DB24D869D60063507C /* Hero.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4469B0D724D869CD0063507C /* Hero.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44FA774924CACD280018DB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA774824CACD280018DB58 /* AppDelegate.swift */; };
 		44FA774B24CACD280018DB58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA774A24CACD280018DB58 /* SceneDelegate.swift */; };
 		44FA774D24CACD280018DB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA774C24CACD280018DB58 /* ViewController.swift */; };
@@ -23,20 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4469B0D624D869CD0063507C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4469B0D124D869CD0063507C /* Hero.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 44FA778224CACE460018DB58;
-			remoteInfo = Hero;
-		};
-		4469B0D824D869CD0063507C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4469B0D124D869CD0063507C /* Hero.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 44FA778B24CACE460018DB58;
-			remoteInfo = HeroTests;
-		};
 		44FA775C24CACD320018DB58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 44FA773D24CACD280018DB58 /* Project object */;
@@ -60,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4469B0DB24D869D60063507C /* Hero.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +54,6 @@
 		0E36B3842BE4B9FD50C63497 /* Pods_MainProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MainProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E2BCD0941AF0A28F6FF92B /* Pods-MainProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainProject.debug.xcconfig"; path = "Target Support Files/Pods-MainProject/Pods-MainProject.debug.xcconfig"; sourceTree = "<group>"; };
 		4046D45D2C3BBEB4E8272101 /* Pods-MainProject-MainProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainProject-MainProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-MainProject-MainProjectUITests/Pods-MainProject-MainProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4469B0D124D869CD0063507C /* Hero.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Hero.xcodeproj; path = "../Poc-Module/Hero/Hero.xcodeproj"; sourceTree = "<group>"; };
 		44FA774524CACD280018DB58 /* MainProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FA774824CACD280018DB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44FA774A24CACD280018DB58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4469B0DA24D869D60063507C /* Hero.framework in Frameworks */,
 				4B8600AC0EF59F457223F17B /* Pods_MainProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,19 +104,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4469B0D224D869CD0063507C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4469B0D724D869CD0063507C /* Hero.framework */,
-				4469B0D924D869CD0063507C /* HeroTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		44FA773C24CACD280018DB58 = {
 			isa = PBXGroup;
 			children = (
-				4469B0D124D869CD0063507C /* Hero.xcodeproj */,
 				44FA774724CACD280018DB58 /* MainProject */,
 				44FA775E24CACD320018DB58 /* MainProjectTests */,
 				44FA776924CACD320018DB58 /* MainProjectUITests */,
@@ -207,7 +178,6 @@
 				A6D84B792D6F1ECC8F112353 /* Pods-MainProjectTests.debug.xcconfig */,
 				B846C89AF85DF3A3B46BD29A /* Pods-MainProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -307,12 +277,6 @@
 			mainGroup = 44FA773C24CACD280018DB58;
 			productRefGroup = 44FA774624CACD280018DB58 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4469B0D224D869CD0063507C /* Products */;
-					ProjectRef = 4469B0D124D869CD0063507C /* Hero.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				44FA774424CACD280018DB58 /* MainProject */,
@@ -321,23 +285,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4469B0D724D869CD0063507C /* Hero.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Hero.framework;
-			remoteRef = 4469B0D624D869CD0063507C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4469B0D924D869CD0063507C /* HeroTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = HeroTests.xctest;
-			remoteRef = 4469B0D824D869CD0063507C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		44FA774324CACD280018DB58 /* Resources */ = {

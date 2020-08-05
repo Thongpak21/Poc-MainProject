@@ -1,6 +1,0 @@
-[submodule "Poc-Module"]
-	path = Poc-Module
-	url = https://github.com/Thongpak21/Poc-Module.git
-[submodule "Poc-SuperHero"]
-	path = Poc-SuperHero
-	url = https://github.com/Thongpak21/Poc-SuperHero
