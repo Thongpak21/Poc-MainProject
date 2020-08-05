@@ -15,7 +15,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print(HeroManager.shared.getSomething())
     }
-
-
 }
 
