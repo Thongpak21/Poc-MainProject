@@ -3,8 +3,7 @@
 workspace 'MainProject'
 
 def share_pods
-  pod 'Moya/RxSwift'
-  pod "ObjectMapper"
+  pod 'RxSwift'
 end
 
 
